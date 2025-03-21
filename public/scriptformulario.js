@@ -48,9 +48,7 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
       // Enviar los datos del producto al backend
       const producto = {
           nombre,
-          preciocup: parseFloat(preciocup),
-          preciomlc: parseFloat(preciomlc),
-          preciousd: parseFloat(preciousd),
+          precio: parseFloat(precio),
           info,
           imagen: imageUrl,
           varcategoria,
