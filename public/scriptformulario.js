@@ -11,11 +11,11 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
   const categoria = document.getElementById('categoria');
   const file = fileInput.files[0];
 
- // if (!nombre  ||precio  || !info || !file || !categoria) {
-   //   alert('Por favor, completa todos los campos.');
-    //  document.getElementById('loading').style.display = 'none'; // Ocultar spinner si hay error
-     // return;
- // } 
+  if (!nombre  ||precio  || !info || !file || !categoria) {
+      alert('Por favor, completa todos los campos.');
+      document.getElementById('loading').style.display = 'none'; // Ocultar spinner si hay error
+      return;
+  } 
 
 
   var varcategoria;
