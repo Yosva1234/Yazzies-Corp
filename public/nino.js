@@ -8,7 +8,7 @@ function mostrarPlatos(bebidas) {
     // Recorre la lista de bebidas y crea un elemento para cada una
     bebidas.forEach((plato) => {
   
-      if(plato.tipo == 'n'){
+      if(plato.varcategoria == 'n'){
         
       const platoElement = document.createElement("div");
       platoElement.classList.add("plato");
