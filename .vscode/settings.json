@@ -14,5 +14,10 @@
             "username": "uen4ugptvskyt5yt",
             "password": "55FjXf0Fi0W1ng5lG6u5"
         }
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#27310A",
+        "titleBar.activeBackground": "#37450E",
+        "titleBar.activeForeground": "#F9FCEF"
+    }
 }
