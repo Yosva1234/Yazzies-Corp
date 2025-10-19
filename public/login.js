@@ -2,8 +2,8 @@ document.getElementById('login-form').addEventListener('submit', function (event
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
   
     // Valores asignados (puedes cambiarlos)
-    const usuarioCorrecto = getelement('yazminbarcelo');
-    const contraseñaCorrecta = getelement('Yazmin0418');
+    const usuarioCorrecto = 'yazminbarcelo';
+    const contraseñaCorrecta = 'Yazmin0418';
   
     // Obtener los valores ingresados por el usuario
     const username = document.getElementById('username').value;
@@ -19,17 +19,4 @@ document.getElementById('login-form').addEventListener('submit', function (event
     }
   });
 
-  function getelement(element) {
-    return fetch(element)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => data.valor)
-        .catch(error => {
-            console.error('Hubo un problema con la solicitud:', error);
-        });
-}
 
